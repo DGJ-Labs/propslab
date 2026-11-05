@@ -38,4 +38,6 @@ td:first-child>.link{display:block;text-align:left;margin-bottom:5px}.card{min-w
 /* Single shared wordmark definition for sidebar and authentication. */
 .sidebar .brand-title,.login-card .brand-title{display:flex;align-items:center;justify-content:center;gap:7px;white-space:nowrap;font-family:Arial,Helvetica,sans-serif!important;font-size:19px!important;font-style:normal!important;font-weight:700!important;line-height:1.15!important;letter-spacing:0!important;color:#39332f}
 .sidebar .brand-title b,.sidebar .brand-title>span:last-child,.login-card .brand-title b,.login-card .brand-title>span:last-child{font:inherit!important;letter-spacing:0!important}
-.sidebar .brand-title .brand-divider,.login-card .brand-title .brand-divider{font-family:Arial,Helvetica,sans-serif;font-size:19px;font-style:normal;font-weight:400;line-height:1.15;color:#a49b90}
+.sidebar .brand-title .brand-divider,.login-card .brand-title .brand-divider{font-family:Arial,Helvetica,sans-serif;font-size:19px;font-style:normal;font-weight:700;line-height:1.15;color:#39332f}
+
+.sidebar-brand-footer{margin-top:24px;padding-top:14px;border-top:1px solid var(--line);text-align:center;color:var(--muted);font:400 8px/1.6 Arial,Helvetica,sans-serif;letter-spacing:1.1px}.sidebar-brand-footer>div+div{margin-top:4px}
