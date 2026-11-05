@@ -8,10 +8,10 @@ const stages=['Overview','RFP & Documents','Requirements Review','Proposal Build
 const sections=['Cover Letter','Executive Summary','Project Understanding','Scope of Services','Methodology','Deliverables & Programme','Assumptions & Exclusions'];
 const roleLabels={admin:'Admin',manager:'Manager',contributor:'Contributor',reviewer:'Reviewer',viewer:'Viewer'};
 function toast(t){$('#toast').textContent=t;$('#toast').style.display='block';setTimeout(()=>$('#toast').style.display='none',4000)}
-function head(title,sub,action=''){return `<div class="heading"><div><div class="eyebrow">PROPELLA / ${page==='Workspace'?'PROPOSAL WORKSPACE':'WORKSPACE'}</div><h1>${title}</h1><p style="margin:0">${sub}</p></div>${action}</div>`}
+function head(title,sub,action=''){return `<div class="heading"><div><div class="eyebrow">PROPSLAB / ${page==='Workspace'?'PROPOSAL WORKSPACE':'WORKSPACE'}</div><h1>${title}</h1><p style="margin:0">${sub}</p></div>${action}</div>`}
 function btn(t,fn,primary=false){return `<button class="${primary?'primary':''}" onclick="${fn}">${t}</button>`}
 function filterStatus(v){$('#rows').innerHTML=rows();if(v!=='All statuses')Array.from($('#rows').children).forEach(r=>r.hidden=!r.textContent.includes(v))}
-function aiContext(){const id=['rfp','rfp','check','draft','team',null,'review'][stage];if(!id)return '';const t=aiTasks.find(x=>x.id===id);return `<div class="ai-context"><div><b>✧ Propella AI</b><span>${t.desc}</span></div><button class="ai-outline" onclick="openAI('${id}')">${t.title} with AI →</button></div>`;}
+function aiContext(){const id=['rfp','rfp','check','draft','team',null,'review'][stage];if(!id)return '';const t=aiTasks.find(x=>x.id===id);return `<div class="ai-context"><div><b>✧ PropsLab AI</b><span>${t.desc}</span></div><button class="ai-outline" onclick="openAI('${id}')">${t.title} with AI →</button></div>`;}
 function aiCards(){return `<div class="ai-task-grid">${aiTasks.map(t=>`<button class="ai-task" onclick="openAI('${t.id}')"><span class="ai-task-icon">✧</span><strong>${t.title}</strong><span>${t.desc}</span><small>Open action →</small></button>`).join('')}</div>`;}
 
 const aiTasks=[
