@@ -14,12 +14,12 @@ body{background:var(--ivory);font:14px Arial,Helvetica,sans-serif;-webkit-font-s
 td:first-child>.link{display:block;text-align:left;margin-bottom:5px}.card{min-width:0}.steps button{white-space:nowrap}
 
 /* PropsLab wordmark */
-.brand{padding:12px 10px 5px;letter-spacing:0}.brand-title{display:flex;align-items:center;justify-content:center;gap:7px;white-space:nowrap;font:19px/1.2 Arial,Helvetica,sans-serif}.brand-title b{font-weight:600;letter-spacing:.3px}.brand-divider{color:#a49b90;font-weight:400}.brand small{text-align:center;font-size:8px;letter-spacing:1.15px;margin-top:9px}
+.brand{padding:12px 10px 5px;letter-spacing:0}.brand-divider{color:#a49b90;font-weight:400}.brand small{text-align:center;font-size:8px;letter-spacing:1.15px;margin-top:9px}
 
 /* CRM header match: crop only the secondary DGJ lettering from the existing emblem. */
 .sidebar-logo{height:52px;min-height:52px;padding:8px 0 0;display:block;text-align:center;overflow:hidden}
 .sidebar-logo img{display:inline-block;width:64px;height:auto;max-width:none;object-fit:contain;clip-path:inset(0 0 29% 0)}
-.brand{padding:10px 7px 5px}.brand-title{font:22px/1.15 Arial,Helvetica,sans-serif;gap:9px;letter-spacing:0}.brand-title b{font-weight:700;letter-spacing:1px}.brand-title>span:last-child{font-weight:400}.brand-divider{font-size:21px;color:#9c968b}.brand small{font:8px/1.4 Arial;letter-spacing:1.1px;margin:8px 0 12px}
+.brand{padding:10px 7px 5px}.brand-divider{font-size:21px;color:#9c968b}.brand small{font:8px/1.4 Arial;letter-spacing:1.1px;margin:8px 0 12px}
 @media(max-width:750px){.sidebar-logo{height:48px;min-height:48px;padding-top:8px}.sidebar-logo img{width:46px}}
 
 /* Explicit AI entry points in the shared DGJ visual system. */
@@ -31,6 +31,11 @@ td:first-child>.link{display:block;text-align:left;margin-bottom:5px}.card{min-w
 .workflow-banner{display:flex;align-items:center;justify-content:space-between;gap:24px;background:#ede8de;border:1px solid #dfd6c9;border-left:4px solid #e60012;padding:24px 28px;margin:0 0 24px;border-radius:10px}.workflow-banner h2{font-size:28px;margin:8px 0}.workflow-banner p{margin:0}.lifecycle-steps{flex-wrap:wrap;gap:6px}.lifecycle-steps button{font-size:12px;padding:10px}.scope-list{margin:20px 0}.scope-item{display:grid;grid-template-columns:2fr 1fr 1fr 1.5fr;gap:15px;align-items:start;border-bottom:1px solid #e5dfd6;padding:18px 0}.scope-item small,.gate small,td small{display:block;margin-top:7px;color:#756f66}.scope-item label{font-size:11px}.scope-item b{font-size:13px;line-height:1.5}.gate{padding:20px;border:1px solid #e2dbd2;border-radius:10px;margin:16px 0;background:#faf8f4}.gate.done{border-left:3px solid #3b7961}.gate button{margin-top:14px}details{border-bottom:1px solid #e5dfd6;padding:14px 0}summary{cursor:pointer;font-weight:600}td input,td select{min-width:140px}label textarea{width:100%}@media(max-width:1000px){.scope-item{grid-template-columns:1fr 1fr}.workflow-banner{align-items:flex-start;flex-direction:column}}@media(max-width:600px){.scope-item{grid-template-columns:1fr}.workflow-banner h2{font-size:23px}.lifecycle-steps{max-height:180px;overflow:auto}}
 
 /* Shared DGJ wordmark: match TenderLab's 19px Arial bold lockup. */
-.brand-title{font:700 19px/1.15 Arial,Helvetica,sans-serif;letter-spacing:0;gap:7px;color:#39332f}
-.brand-title b,.brand-title>span:last-child{font-weight:700;letter-spacing:0}
-.brand-title .brand-divider{font-size:19px;font-weight:400;color:#a49b90}
+
+
+
+
+/* Single shared wordmark definition for sidebar and authentication. */
+.sidebar .brand-title,.login-card .brand-title{display:flex;align-items:center;justify-content:center;gap:7px;white-space:nowrap;font-family:Arial,Helvetica,sans-serif!important;font-size:19px!important;font-style:normal!important;font-weight:700!important;line-height:1.15!important;letter-spacing:0!important;color:#39332f}
+.sidebar .brand-title b,.sidebar .brand-title>span:last-child,.login-card .brand-title b,.login-card .brand-title>span:last-child{font:inherit!important;letter-spacing:0!important}
+.sidebar .brand-title .brand-divider,.login-card .brand-title .brand-divider{font-family:Arial,Helvetica,sans-serif;font-size:19px;font-style:normal;font-weight:400;line-height:1.15;color:#a49b90}
