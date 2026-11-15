@@ -16,3 +16,30 @@
 
 /* r12: keep the assignment card inside the map grid, independent of the site sidebar. */
 .flow-dialog{margin:auto;box-sizing:border-box;overflow:auto}.flow-dialog-grid{width:100%;min-width:0;align-items:start}.flow-dialog-grid.with-assignment{grid-template-columns:minmax(0,1fr) minmax(290px,340px)}.flow-dialog-grid>.flow-scroll{min-width:0;width:100%}.flow-dialog .flow-assignment-panel{position:static;inset:auto;z-index:auto;width:100%;min-width:0;height:auto;max-height:65vh;margin:0;display:block;overflow:auto;border:1px solid #e3dace;padding:18px;box-sizing:border-box}.flow-assignment-panel h3,.flow-assignment-panel p,.flow-user-list small{overflow-wrap:anywhere}.flow-assignment-panel input[type=search]{width:100%;min-width:0}.flow-assignment-panel .flow-user-option>span{min-width:0}.flow-assignment-panel form>button{width:100%}@media(max-width:900px){.flow-dialog-grid.with-assignment{grid-template-columns:minmax(0,1fr)}.flow-dialog .flow-assignment-panel{max-height:45vh}.flow-toolbar{flex-wrap:wrap}}
+/* R13: consistent Avenir Next typography, section shortcuts and reference/report views. */
+:root{--propslab-font:'Avenir Next','Avenir',Arial,sans-serif}
+body,button,input,select,textarea,h1,h2,h3,h4,.brand-title,.flow-node{font-family:var(--propslab-font)}
+.brand-title,.brand-title b,.brand-title .brand-divider{font-weight:600}
+.library-main-card{text-align:left;cursor:default;display:flex;flex-direction:column;align-items:stretch}
+.library-heading-link{border:0;background:none;padding:0;text-align:left;font:inherit;color:inherit}
+.library-shortcuts{padding-left:20px;margin:0 0 22px;flex:1}
+.library-shortcuts li{padding:4px 0;color:var(--red,#ce1430)}
+.library-shortcuts button{border:0;background:none;text-align:left;padding:3px 0;font-weight:400;text-decoration:underline;text-underline-offset:3px;color:inherit;line-height:1.5}
+.home-tabs{margin-bottom:24px}.workflow-source-scroll{max-width:100%;max-height:78vh;overflow:auto;background:#fff;border:1px solid #ded7cd;border-radius:8px;margin-top:18px}
+.workflow-source-scroll img{display:block;width:2000px;max-width:none;height:auto}
+.source-sheet-tools{display:flex;align-items:center;gap:20px;flex-wrap:wrap}.source-sheet-tools span{font-size:12px;color:#70675d}
+.project-code{display:block;font-size:11px;letter-spacing:.04em;margin-top:5px;overflow-wrap:anywhere}
+
+.sidebar .brand-title,.login-card .brand-title,.sidebar .brand-title .brand-divider,.login-card .brand-title .brand-divider{font-family:var(--propslab-font)!important;font-weight:700!important}
+.hero h2,.stat strong{font-family:var(--propslab-font)}
+
+@font-face{font-family:'Avenir Next';src:local('AvenirNext-Regular'),local('Avenir Next Regular');font-weight:400;font-display:swap}
+@font-face{font-family:'Avenir Next';src:local('AvenirNext-DemiBold'),local('Avenir Next Demi Bold');font-weight:600;font-display:swap}
+@font-face{font-family:'Avenir Next';src:local('AvenirNext-Bold'),local('Avenir Next Bold');font-weight:700;font-display:swap}
+/* R14: outcome-based steps, progressive disclosure and direction-aware registers. */
+.source-mapping{font-size:11px;margin-top:14px;color:#756b60}.source-mapping summary{cursor:pointer}
+.simple-confirm-actions{display:flex;gap:10px;flex-wrap:wrap}.simple-confirm-actions button{min-width:110px}
+.task-work>details{margin:16px 0}.task-work>details>summary{font-weight:600;padding:15px;background:#eee8df;border-radius:5px;cursor:pointer}
+.document-kind-section{margin-top:28px}.document-kind-section h3{display:flex;align-items:center;gap:10px}
+.document-report-counts{display:flex;gap:10px;flex-wrap:wrap;margin:15px 0}
+.simplified-map{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin:16px 0 26px}.simplified-map>div{border:1px solid #ddd4c8;border-top:3px solid #ce1430;border-radius:6px;padding:15px;display:flex;flex-direction:column;gap:8px;background:#faf7f1}.simplified-map span{font-size:10px;color:#ce1430}.simplified-map small{color:#73695f;line-height:1.5}
