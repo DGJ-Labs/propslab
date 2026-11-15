@@ -45,3 +45,6 @@ body,button,input,select,textarea,h1,h2,h3,h4,.brand-title,.flow-node{font-famil
 .simplified-map{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin:16px 0 26px}.simplified-map>div{border:1px solid #ddd4c8;border-top:3px solid #ce1430;border-radius:6px;padding:15px;display:flex;flex-direction:column;gap:8px;background:#faf7f1}.simplified-map span{font-size:10px;color:#ce1430}.simplified-map small{color:#73695f;line-height:1.5}
 
 .milestone-action{display:inline-flex;flex-direction:column;gap:6px;margin:4px 8px 4px 0;vertical-align:top;max-width:260px}.milestone-action small{font-size:11px;line-height:1.5;color:#776b61}
+.ai-action-picker{display:grid;gap:10px;padding:12px 16px;border-top:1px solid var(--line,#ded5c8)}
+.ai-action-picker label{display:grid;gap:6px}.ai-action-picker select{width:100%;min-width:0;padding:9px;background:#fffdf8;border:1px solid #ded5c8;border-radius:4px;font:inherit}.ai-action-picker .ai-search-toggle{display:flex;align-items:center;gap:8px}.ai-action-picker input[type=checkbox]{width:auto}.ai-action-picker small{font-size:11px;line-height:1.6}
+.message>div{white-space:pre-wrap;overflow-wrap:anywhere}
