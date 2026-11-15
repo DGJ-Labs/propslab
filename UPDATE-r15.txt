@@ -1,0 +1,6 @@
+FRONTEND ONLY — upload these files at your existing frontend repository root. Keep your r14 backend.
+Home / Workflow: original full phase sheets with flowchart, DSRC table, tools and legends. Sheets load automatically; use phase tabs and zoom.
+Opportunity index: original flowchart map and symbol key; no responsibility tables.
+Assigning: original interactive map with the side-by-side user picker.
+Simplified milestone workspaces and document classifications remain. The simplified journey cards have been removed from the homepage workflow.
+Frontend integration checks and browser fixture checks passed. No backend changes or production deployment.
