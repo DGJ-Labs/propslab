@@ -1,0 +1,3 @@
+Frontend only. Upload contents to the existing frontend repository root. Keep backend r14.
+Home scope buttons: My / All. Opportunities & Proposals page retains the full scope labels. Source numbering notes removed from Home and flowchart dialogs. Original flowcharts, legends and assignment maps retained.
+Frontend integration checks passed. No production deployment performed.
