@@ -43,3 +43,5 @@ body,button,input,select,textarea,h1,h2,h3,h4,.brand-title,.flow-node{font-famil
 .document-kind-section{margin-top:28px}.document-kind-section h3{display:flex;align-items:center;gap:10px}
 .document-report-counts{display:flex;gap:10px;flex-wrap:wrap;margin:15px 0}
 .simplified-map{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin:16px 0 26px}.simplified-map>div{border:1px solid #ddd4c8;border-top:3px solid #ce1430;border-radius:6px;padding:15px;display:flex;flex-direction:column;gap:8px;background:#faf7f1}.simplified-map span{font-size:10px;color:#ce1430}.simplified-map small{color:#73695f;line-height:1.5}
+
+.milestone-action{display:inline-flex;flex-direction:column;gap:6px;margin:4px 8px 4px 0;vertical-align:top;max-width:260px}.milestone-action small{font-size:11px;line-height:1.5;color:#776b61}

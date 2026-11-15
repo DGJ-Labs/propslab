@@ -1,5 +1,5 @@
 let journeyDefinition={phases:[],routes:[]},viewPhase=1,viewTask='',companionOpen=true,companionTab='chat',chatDraft='',chatBusy=false,projectMessages=[],projectDocuments=[],libraryRecords=[];
-const canRecord=()=>signedUser&&['admin','manager','contributor'].includes(signedUser.role);
+const canRecord=()=>signedUser&&['admin','manager','contributor'].includes(signedUser.role)&&(page!=='Workspace'||working?.data?._journey?.state!=='Closed');
 const jsState=()=>working?.data?._journey;
 const baseWorkspaceLoad=loadWorkspace;
 loadWorkspace=async function(){journeyDefinition=await api('/api/journey-definition');await baseWorkspaceLoad();};
