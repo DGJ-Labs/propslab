@@ -1,0 +1,16 @@
+/* Shared control alignment, including modal confirmations and companion options. */
+input:is([type="checkbox"],[type="radio"]){width:16px!important;height:16px;min-width:16px;padding:0;display:inline-block!important;vertical-align:middle;accent-color:var(--red);flex:0 0 16px}
+label:has(>input:is([type="checkbox"],[type="radio"])){display:flex;align-items:flex-start;gap:9px;line-height:1.5;cursor:pointer;min-width:0;text-align:start}
+label>input:is([type="checkbox"],[type="radio"]){margin:2px 0 0!important;align-self:flex-start}
+label:has(>input:is([type="checkbox"],[type="radio"]))>span{min-width:0;overflow-wrap:anywhere}
+.start-options label:has(>input[type="radio"]){display:grid;grid-template-columns:22px minmax(0,1fr);gap:8px}
+.start-options label>input[type="radio"]{grid-row:span 2}
+.member-choice{flex-wrap:wrap}.member-choice small{margin-inline-start:0}
+button{display:inline-flex;align-items:center;justify-content:center;gap:7px;vertical-align:middle;line-height:1.4;max-width:100%;overflow-wrap:anywhere}
+button>svg,button>.ico{flex-shrink:0}
+.toolbar,.bottom,.heading-actions,.task-actions,.companion-actions,.simple-confirm-actions,.flow-toolbar>div,.round-bar>div{flex-wrap:wrap;gap:10px}
+.bottom{align-items:center}.toolbar>input,.toolbar>select{min-width:0;max-width:100%}
+.flow-toolbar>div{min-width:0}.flow-toolbar>div:first-child{flex-wrap:wrap}
+.companion-tabs{flex-wrap:wrap}.companion-send{flex-wrap:wrap}.companion-send small{min-width:160px}
+.companion-head>button{flex:0 0 auto}
+@media(max-width:600px){.heading{flex-wrap:wrap}.library-file-item>div:last-child{display:flex;flex-wrap:wrap;gap:8px}.bottom>div{display:flex;flex-wrap:wrap;gap:8px}}
