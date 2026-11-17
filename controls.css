@@ -6,7 +6,7 @@ label:has(>input:is([type="checkbox"],[type="radio"]))>span{min-width:0;overflow
 .start-options label:has(>input[type="radio"]){display:grid;grid-template-columns:22px minmax(0,1fr);gap:8px}
 .start-options label>input[type="radio"]{grid-row:span 2}
 .member-choice{flex-wrap:wrap}.member-choice small{margin-inline-start:0}
-button{display:inline-flex;align-items:center;justify-content:center;gap:7px;vertical-align:middle;line-height:1.4;max-width:100%;overflow-wrap:anywhere}
+button{vertical-align:middle;line-height:1.4;max-width:100%}
 button>svg,button>.ico{flex-shrink:0}
 .toolbar,.bottom,.heading-actions,.task-actions,.companion-actions,.simple-confirm-actions,.flow-toolbar>div,.round-bar>div{flex-wrap:wrap;gap:10px}
 .bottom{align-items:center}.toolbar>input,.toolbar>select{min-width:0;max-width:100%}
@@ -14,3 +14,11 @@ button>svg,button>.ico{flex-shrink:0}
 .companion-tabs{flex-wrap:wrap}.companion-send{flex-wrap:wrap}.companion-send small{min-width:160px}
 .companion-head>button{flex:0 0 auto}
 @media(max-width:600px){.heading{flex-wrap:wrap}.library-file-item>div:last-child{display:flex;flex-wrap:wrap;gap:8px}.bottom>div{display:flex;flex-wrap:wrap;gap:8px}}
+
+/* Navigation keeps its own layout; action-button styles must not reflow codes/icons. */
+nav button{justify-content:flex-start;text-align:left;overflow-wrap:normal;word-break:normal}
+nav button .ico{display:inline-flex;align-items:center;justify-content:center;width:22px;min-width:22px;flex:0 0 22px}
+nav button .ico svg{width:21px;height:21px;flex:0 0 21px}
+.task-nav>button{justify-content:flex-start;align-items:flex-start;overflow-wrap:normal;word-break:normal}
+.task-nav>button>span:first-child{flex:0 0 24px;min-width:24px;white-space:nowrap;text-align:center;font-variant-numeric:tabular-nums}
+.task-nav>button>span+span{flex:1;min-width:0;text-align:left;white-space:normal}
