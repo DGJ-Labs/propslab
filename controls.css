@@ -22,3 +22,5 @@ nav button .ico svg{width:21px;height:21px;flex:0 0 21px}
 .task-nav>button{justify-content:flex-start;align-items:flex-start;overflow-wrap:normal;word-break:normal}
 .task-nav>button>span:first-child{flex:0 0 24px;min-width:24px;white-space:nowrap;text-align:center;font-variant-numeric:tabular-nums}
 .task-nav>button>span+span{flex:1;min-width:0;text-align:left;white-space:normal}
+
+.home-table-search{max-width:460px;margin:16px 0}.home-table-search input{min-width:0;width:100%}.opportunity-scope{flex-wrap:wrap}.opportunity-scope button{white-space:normal}
